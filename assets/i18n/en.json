@@ -294,7 +294,8 @@
     "EDITINGMESSAGE": "Test Editing toast ENG",
     "ENTERINGMESSAGE": "Test Entering toast ENG",
     "ERRORMESSAGE": "Test Error toast ENG",
-    "OFFER_ADDED": "Offer added to your list in the CV section"
+    "OFFER_ADDED": "Offer added to your list in the CV section",
+    "INSCRIPTION_TUNNEL_END": "Complete your account at any time"
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Sector",

@@ -299,7 +299,8 @@
     "ENTERINGMESSAGE": "Vos informations ont bien été enregistrées.",
     "ERRORMESSAGE": "Une erreur est survenue. Veuillez réessayer",
     "OFFER_ADDED": "Offre ajoutée à votre liste dans la partie CV",
-    "OFFER_REMOVED": "Offre retirée de votre liste dans la partie CV"
+    "OFFER_REMOVED": "Offre retirée de votre liste dans la partie CV",
+    "INSCRIPTION_TUNNEL_END": "Complétez votre compte à tout moment"
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Secteur",

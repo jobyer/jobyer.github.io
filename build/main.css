@@ -28119,6 +28119,14 @@ button[clear].button.purple-btn:hover {
   bottom: 62px;
 }
 
+.modal-wrapper .full-height-content {
+  max-height: 100%;
+}
+
+.modal-wrapper .full-height-content .voj-full-height-content {
+  overflow-y: scroll;
+}
+
 .full-height-content {
   height: auto;
   position: absolute;

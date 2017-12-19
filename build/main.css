@@ -30821,6 +30821,11 @@ button[clear].button.purple-btn:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.div-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 voj-calendar {
   display: block;
 }
@@ -33898,15 +33903,6 @@ page-offer-slot-parameters .voj-content .voj-form-container {
   text-align: center;
 }
 
-page-offer-slot-parameters .voj-content .voj-form-container .custom-btn {
-  background-color: var(--voj-color-primary);
-  text-transform: capitalize;
-  color: #fff;
-  border-color: var(--voj-color-primary);
-  border-radius: 4%;
-  padding: 0 10%;
-}
-
 page-prerequisites .prerequisites-list {
   height: 75%;
   background-color: #fff;
@@ -34180,6 +34176,11 @@ jobyer-resume-page .desktop-container .information-resume-edit-btn {
   margin-right: 0;
 }
 
+jobyer-resume-page .item-disabled, jobyer-resume-page item-disabled * {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 jobyer-resume-page .desktop-container {
   background-color: var(--voj-color-primary);
 }
@@ -34256,6 +34257,22 @@ page-contract-form .full-btn {
 page-contract-form .recall-btn {
   width: 100%;
   background-color: #eca613 !important;
+}
+
+generate-payment .page-content {
+  background-color: var(--voj-color-primary);
+}
+
+generate-payment .card-content {
+  margin: 10px;
+  padding: 20px;
+}
+
+generate-payment .validate-button {
+  height: 30px;
+  font-size: 14px;
+  background-color: var(--voj-color-primary);
+  color: #ffffff;
 }
 
 page-missions-calendar voj-calendar {
@@ -34578,6 +34595,16 @@ page-search .search-info-message {
 
 page-search .search-page-content {
   background-color: var(--voj-color-primary);
+}
+
+page-search .search-page-content.hunter-page-content.detailed-search .scroll-content,
+page-search .search-page-content.hunter-page-content.detailed-search .fixed-content {
+  margin-top: 412px !important;
+}
+
+page-search .search-page-content.detailed-search .scroll-content,
+page-search .search-page-content.detailed-search .fixed-content {
+  margin-top: 342px !important;
 }
 
 page-search .search-page-content .scroll-content {

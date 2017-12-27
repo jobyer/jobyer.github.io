@@ -147,7 +147,9 @@
     "VALIDATE": "Validate",
     "FULL_DAY": "Full Day",
     "FROM": "From",
-    "TO": "To"
+    "TO": "To",
+    "CONTRACT_START" : "Contract start",
+    "CONTRACT_END" : "Contract end"
   },
   "REMUNERATION": {
     "MY_REMUNERATION": "My remuneration",
@@ -306,7 +308,8 @@
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",
     "HIDE_CONVENTION_PARAMETERS":"Hide job classification",
     "LEVEL":"Level",
-    "JOB_UPDATED": "job(s) updated"
+    "JOB_UPDATED": "job(s) updated",
+    "CONTRACT_REGIME": "Contract regime"
   },
   "LOGOUT_CONFIRMATION_ALERT": {
     "MESSAGE": "Log out?",

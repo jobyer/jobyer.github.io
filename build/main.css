@@ -32586,6 +32586,7 @@ ion-input > input {
   color: #ffffff;
   font-size: medium;
   margin-top: -15px !important;
+  text-decoration: underline;
 }
 
 .ios .toggler-text > .item-inner, .md .toggler-text > .item-inner {
@@ -32713,10 +32714,7 @@ voj-table .header .col {
 }
 
 voj-table .col {
-  border: solid 1px #b1b1b1;
-  border-bottom-style: none;
-  border-right-style: none;
-  border-left-style: none;
+  border: solid 1px #14baa6;
 }
 
 voj-table .col > ion-input {
@@ -32725,6 +32723,61 @@ voj-table .col > ion-input {
 
 voj-table .row:last-child .col {
   border-bottom: solid 1px #b1b1b1;
+}
+
+voj-table .filter-row {
+  border: none;
+  padding: 0;
+}
+
+voj-table .filter-col {
+  border: none !important;
+  padding: 0;
+}
+
+voj-table .filter-col .button-clear-md {
+  padding: 0;
+}
+
+voj-table .filter-col col:last-child {
+  width: 50px;
+}
+
+voj-table ion-searchbar {
+  padding: 0 !important;
+}
+
+voj-table ion-searchbar .searchbar-input {
+  padding-right: 30px !important;
+  padding-left: 40px !important;
+}
+
+voj-table .container {
+  min-height: 100px;
+  position: relative;
+  /* so center-area can
+                           be positioned absolute */
+}
+
+voj-table .center-area {
+  /* let it fill the whole container */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+voj-table .center-area:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+voj-table .centered {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 account-page {
@@ -34231,6 +34284,129 @@ jobyer-resume-page .desktop-container .item-inner {
 jobyer-resume-page .mobile-container .information-resume-edit-btn,
 jobyer-resume-page .desktop-container .information-resume-edit-btn {
   margin-right: 0;
+}
+
+ion-card-header {
+  background-color: #3f51b5;
+  text-align: center;
+}
+
+ion-card-header h1 {
+  color: #ffffff !important;
+}
+
+.search-page-content {
+  background-color: var(--voj-color-primary);
+}
+
+ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+button h1 {
+  font-size: 4rem !important;
+}
+
+button label {
+  display: block;
+}
+
+.vitbox-validated {
+  background-color: lightyellow;
+}
+
+.item-ribbon {
+  background-color: #fff;
+  position: relative;
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.item-ribbon .ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 2;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+
+.item-ribbon .ribbon span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #f53d3d;
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+
+.item-ribbon .ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #f53d3d;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #f53d3d;
+}
+
+.item-ribbon .ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #f53d3d;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #f53d3d;
+}
+
+.ribbon.cruzeiro span {
+  color: white;
+  background: #f53d3d;
+}
+
+.ribbon.cruzeiro span::before {
+  border-left: 3px solid #f53d3d;
+  border-top: 3px solid #f53d3d;
+}
+
+.ribbon.cruzeiro span::after {
+  border-right: 3px solid #f53d3d;
+  border-top: 3px solid #f53d3d;
+}
+
+ion-spinner * {
+  width: 28px;
+  height: 28px;
+  stroke: #fff !important;
+  fill: #fff;
+}
+
+page-vitbox-details .col-header {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+ion-spinner * {
+  width: 28px;
+  height: 28px;
+  stroke: #444 !important;
 }
 
 page-about ion-header {

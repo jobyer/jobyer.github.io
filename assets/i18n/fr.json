@@ -148,7 +148,9 @@
     "VALIDATE": "Valider",
     "FULL_DAY": "Jour entier",
     "FROM": "De",
-    "TO": "À"
+    "TO": "À",
+    "CONTRACT_START" : "Contrat débute le",
+    "CONTRACT_END" : "Jusqu'au"
   },
   "REMUNERATION": {
     "MY_REMUNERATION": "Ma rémunération",
@@ -311,7 +313,8 @@
     "SHOW_CONVENTION_PARAMETERS":"Accéder à la classification du poste",
     "HIDE_CONVENTION_PARAMETERS":"Cacher la classification du poste",
     "LEVEL":"Niveau",
-    "JOB_UPDATED": "Job(s) mis à jour"
+    "JOB_UPDATED": "Job(s) mis à jour",
+    "CONTRACT_REGIME": "Régime de contrat"
   },
   "LOGOUT_CONFIRMATION_ALERT": {
     "MESSAGE": "Déconnexion?",

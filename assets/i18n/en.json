@@ -338,7 +338,8 @@
     "CANCEL": "No"
   },
   "NOTIFICATION":{
-    "BUTTON_TITLE": "My notifications"
+    "BUTTON_TITLE": "My notifications",
+    "EMPTY": "No notification"
   },
   "LOADING": {
     "WAITING": "Thank you for waiting"

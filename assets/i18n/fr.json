@@ -343,7 +343,8 @@
     "CANCEL": "Non"
   },
   "NOTIFICATION":{
-    "BUTTON_TITLE": "Mes notifications"
+    "BUTTON_TITLE": "Mes notifications",
+    "EMPTY": "Aucune notification"
   },
   "LOADING": {
     "WAITING": "Merci de patienter"

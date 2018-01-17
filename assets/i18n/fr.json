@@ -362,5 +362,8 @@
     "AD_UPDATED": "Annonce modifiée",
     "AD_REMOVED": "Annonce supprimée",
     "AD_PUBLISHED": "Annonce mise en ligne"
+  },
+  "CONVENTION_DATA": {
+    "TITLE": "Mes conditions d'employeur"
   }
 }

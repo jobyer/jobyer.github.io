@@ -30382,13 +30382,22 @@ ion-navbar.toolbar {
  */
 @media screen and (min-width: 768px) {
   ion-nav {
-    margin-top: 180px;
+    margin-top: 76px;
   }
-  ion-content {
-    height: calc(100% - 180px);
+  ion-nav ion-content {
+    height: calc(100% - 76px);
+  }
+  voj-header-web.expanded ~ ion-nav {
+    margin-top: 130px;
+  }
+  voj-header-web.expanded ~ ion-nav ion-content {
+    height: calc(100% - 130px);
+  }
+  ion-content.search-page-content.vitbox {
+    height: calc(100% - 112px);
   }
   .scroll-content {
-    margin-bottom: 112px;
+    /* margin-bottom: $generic-footer-width *2 ; */
   }
   ion-fab[top] {
     top: 10px !important;
@@ -31451,6 +31460,7 @@ voj-card .voj-subtitle ion-icon {
 
 voj-card .voj-subtitle ion-label {
   margin: 0;
+  overflow: initial !important;
 }
 
 voj-card .voj-subtitle h3 {
@@ -32021,94 +32031,63 @@ voj-header-segment .contentList {
   /*border: 1px solid black;*/
 }
 
-voj-header-web .voj-web-header {
+voj-header-web ion-header {
   background-color: #4b545e;
+  min-height: 76px;
 }
 
-voj-header-web .voj-style {
-  padding-top: 20px;
+voj-header-web ion-header.full {
+  min-height: 130px;
 }
 
-voj-header-web .voj-style button {
-  background: var(--voj-color-primary);
-  border: none;
-  color: #fff;
+voj-header-web .header-col-left,
+voj-header-web .header-col-right {
+  padding-top: 0;
 }
 
-voj-header-web .button-clicked {
-  background-color: var(--voj-color-primary);
-}
-
-voj-header-web .generic {
-  height: 180px;
-}
-
-voj-header-web .generic .row:first-child .col:first-child {
-  padding-left: 100px;
-}
-
-voj-header-web .generic .row:first-child .col:first-child img {
-  bottom: -34px;
-  position: relative;
-  height: 80px;
-}
-
-voj-header-web .generic .row:first-child .col:last-child {
-  padding-right: 10px;
-  text-align: right;
-}
-
-voj-header-web .generic .row:first-child .col:last-child button {
-  color: #fff;
-  border: 1px solid var(--voj-color-primary);
-  text-transform: none;
-}
-
-voj-header-web .generic .row:first-child .col:last-child button:hover {
-  background-color: var(--voj-color-primary);
-}
-
-voj-header-web .generic .row:first-child .col:last-child button #1 {
-  background-color: var(--voj-color-primary);
-}
-
-voj-header-web .toolbar-background {
-  background-color: #4b545e;
-}
-
-voj-header-web .user-information {
+voj-header-web .header-col-left {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
-  height: 100%;
-  padding-left: 80px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-voj-header-web .user-information .user-name {
-  color: #fff;
-  font-size: 20px;
-  margin-left: 7px;
-}
-
-voj-header-web .user-information img {
-  max-width: 40px;
-  max-height: 40px;
-  border-radius: 50%;
+voj-header-web .app-logo {
+  margin-top: 5px;
 }
 
 voj-header-web .menu-wrapper {
-  padding-top: 2rem;
+  padding-top: 5px;
+  padding-bottom: 0;
+  text-align: right;
 }
 
 voj-header-web .menu-wrapper .menu-item {
   position: relative;
   display: inline-block;
+}
+
+voj-header-web .menu-wrapper .menu-item .top-buttons {
+  color: #fff;
+  border: 1px solid var(--voj-color-primary);
+  text-transform: none;
+}
+
+voj-header-web .menu-wrapper .menu-item .top-buttons:hover {
+  background-color: var(--voj-color-primary);
 }
 
 voj-header-web .menu-wrapper .menu-item .fab-notification {
@@ -32122,6 +32101,35 @@ voj-header-web .menu-wrapper .menu-item .fab-notification {
 
 voj-header-web .menu-wrapper .menu-item + .menu-item {
   margin-left: 14px;
+}
+
+voj-header-web .user-information {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 40px;
+}
+
+voj-header-web .user-information .user-name {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+
+voj-header-web .user-information img {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+voj-header-web .voj-segments-container {
+  margin-bottom: 0 !important;
 }
 
 ion-spinner.web-header-spinner.spinner.spinner-md.spinner-dots.spinner-md-dots * {
@@ -32799,10 +32807,6 @@ voj-table .col > ion-input {
   background-color: #ffffff;
 }
 
-voj-table .row:last-child .col {
-  border-bottom: solid 1px #b1b1b1;
-}
-
 voj-table .filter-row {
   border: none;
   padding: 0;
@@ -32856,6 +32860,26 @@ voj-table .center-area:before {
 voj-table .centered {
   display: inline-block;
   vertical-align: middle;
+}
+
+voj-table .col-ghost {
+  background-color: lightyellow;
+  border-left: solid 1px transparent !important;
+  border-right: solid 1px transparent !important;
+}
+
+voj-table .col-ghost:first-child {
+  border-left: solid 1px #b1b1b1 !important;
+  border-top: solid 1px #b1b1b1 !important;
+}
+
+voj-table .col-total {
+  border-left: solid 1px transparent !important;
+  background-color: lightyellow;
+}
+
+voj-table .col-values {
+  background-color: lightyellow;
 }
 
 account-page {
@@ -34143,6 +34167,10 @@ page-scheduling-offers-jobyers ion-segment-button {
   border-color: #ffffff !important;
 }
 
+page-scheduling-offers-jobyers h5 {
+  color: white;
+}
+
 page-scheduling-offers-list .my-offers-page-content {
   background-color: var(--voj-color-primary);
 }
@@ -34302,6 +34330,10 @@ ion-card-header h1 {
   color: #ffffff !important;
 }
 
+ion-card.card-vitbox.card.card-md {
+  margin-top: 0;
+}
+
 .search-page-content {
   background-color: var(--voj-color-primary);
 }
@@ -34405,9 +34437,206 @@ ion-spinner * {
   fill: #fff;
 }
 
+ion-badge {
+  right: calc(50% - 30px) !important;
+  top: -5px;
+  position: absolute;
+  right: 4%;
+  padding: 1px 6px;
+  height: auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.popup-menu ion-icon {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+.popup-menu-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 68, 68, 0.5)), to(rgba(68, 68, 68, 0.25)));
+  background-image: linear-gradient(rgba(68, 68, 68, 0.5) 0%, rgba(68, 68, 68, 0.25) 100%);
+}
+
+.popup-menu-overlay.in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-menu-toggle {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -20px;
+  background-color: #0f9d58;
+  border-radius: 50%;
+  z-index: 101;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.popup-menu-toggle:before {
+  position: absolute;
+  content: '\f10a';
+  font-family: "Ionicons";
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.popup-menu-toggle.out {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.popup-menu-toggle.out:before {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.popup-menu-panel {
+  position: fixed;
+  width: 300px;
+  height: 180px;
+  border-radius: 5%;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -150px;
+  padding: 0px 5px;
+  background-color: #0f9d58;
+  z-index: 102;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.popup-menu-panel .popup-menu-item {
+  margin: auto;
+  -webkit-box-flex: 1 0 30%;
+  -webkit-flex: 1 0 30%;
+  -moz-flex: 1 0 30%;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.popup-menu-panel .popup-menu-item i {
+  margin: auto 0px 5px 0px;
+  padding: 0px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+
+.popup-menu-panel .popup-menu-item span {
+  padding: 0px;
+  margin: 0px 0px auto 0px;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 11px;
+}
+
+.popup-menu-panel .popup-menu-item:active i {
+  color: #dd4135;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.popup-menu-panel .popup-menu-item:active span {
+  color: #dd4135;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.popup-menu-panel.in {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.popup-menu-panel.in .popup-menu-item {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.vitbox-footer {
+  bottom: 180px;
+}
+
 page-vitbox-details .col-header {
   background-color: #3f51b5;
   color: #ffffff;
+}
+
+page-vitbox-table-list .voj-scrollable-content-wrapper.card-content.card-content-md {
+  height: calc( 100% - 56px);
 }
 
 ion-spinner * {

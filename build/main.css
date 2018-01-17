@@ -30906,6 +30906,10 @@ button[clear].button.purple-btn:hover {
   padding: 1rem;
 }
 
+.cdk-overlay-pane {
+  opacity: 0;
+}
+
 voj-calendar {
   display: block;
 }
@@ -32906,6 +32910,11 @@ account-page .company-select .item-inner {
   border-bottom: none !important;
 }
 
+avatar-page .voj-scrollable-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 avatar-page .rounded {
   border-radius: 50%;
   border: 1px #bdbdbd solid;
@@ -33833,6 +33842,10 @@ page-my-offers-list ion-card.map.card.card-md {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+page-offer-detail .information-resume-required {
+  color: var(--voj-color-danger);
 }
 
 page-offer-detail .voj-detail-button {
@@ -35085,4 +35098,221 @@ page-search ion-card.map.card.card-md {
     box-shadow: none;
     font-weight:bolder;
   }*/
+}
+
+.mat-calendar {
+  display: block;
+}
+
+.mat-calendar-header {
+  padding: 8px 8px 0 8px;
+}
+
+.mat-calendar-content {
+  padding: 0 8px 8px 8px;
+  outline: none;
+  height: calc(100% - (62px + 14px));
+}
+
+.mat-calendar-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% calc(33% / 7 - 16px);
+}
+
+.mat-calendar-spacer {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.mat-calendar-period-button {
+  min-width: 0;
+}
+
+.mat-calendar-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top-width: 5px;
+  border-top-style: solid;
+  margin: 0 0 0 5px;
+  vertical-align: middle;
+}
+
+.mat-calendar-arrow.mat-calendar-invert {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+[dir='rtl'] .mat-calendar-arrow {
+  margin: 0 5px 0 0;
+}
+
+.mat-calendar-previous-button,
+.mat-calendar-next-button {
+  position: relative;
+}
+
+.mat-calendar-previous-button::after,
+.mat-calendar-next-button::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  content: '';
+  margin: 15.5px;
+  border: 0 solid currentColor;
+  border-top-width: 2px;
+}
+
+[dir='rtl'] .mat-calendar-previous-button, [dir='rtl']
+.mat-calendar-next-button {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.mat-calendar-previous-button::after {
+  border-left-width: 2px;
+  -webkit-transform: translateX(2px) rotate(-45deg);
+  transform: translateX(2px) rotate(-45deg);
+}
+
+.mat-calendar-next-button::after {
+  border-right-width: 2px;
+  -webkit-transform: translateX(-2px) rotate(45deg);
+  transform: translateX(-2px) rotate(45deg);
+}
+
+.mat-calendar-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mat-calendar-table-header th {
+  text-align: center;
+  padding: 0 0 8px 0;
+}
+
+.mat-calendar-table-header-divider {
+  position: relative;
+  height: 1px;
+}
+
+.mat-calendar-table-header-divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -8px;
+  right: -8px;
+  height: 1px;
+}
+
+md-year-picker {
+  display: block;
+  height: 100%;
+  overflow: scroll;
+}
+
+.mat-calendar-body {
+  min-width: 224px;
+}
+
+.mat-calendar-body-label {
+  height: 0;
+  line-height: 0;
+  text-align: left;
+  padding-left: 4.71429%;
+  padding-right: 4.71429%;
+}
+
+.mat-calendar-body-cell {
+  position: relative;
+  height: 0;
+  line-height: 0;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.mat-calendar-body-disabled {
+  cursor: default;
+}
+
+.mat-calendar-body-cell-content {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 999px;
+}
+
+[dir='rtl'] .mat-calendar-body-label {
+  text-align: right;
+}
+
+.mat-datepicker-content {
+  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+.mat-calendar {
+  width: 296px;
+  height: 354px;
+}
+
+.mat-datepicker-content-touch {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  display: block;
+  max-height: 80vh;
+  overflow: auto;
+  margin: -24px;
+}
+
+.mat-datepicker-content-touch .mat-calendar {
+  min-width: 250px;
+  min-height: 312px;
+  max-width: 750px;
+  max-height: 788px;
+}
+
+@media all and (orientation: landscape) {
+  .mat-datepicker-content-touch .mat-calendar {
+    width: 64vh;
+    height: 80vh;
+  }
+}
+
+@media all and (orientation: portrait) {
+  .mat-datepicker-content-touch .mat-calendar {
+    width: 80vw;
+    height: 100vw;
+  }
 }

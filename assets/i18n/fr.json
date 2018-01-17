@@ -134,7 +134,9 @@
     "LIST": "Liste des langues",
     "LEVEL": "Niveau",
     "VALIDATE": "Valider",
-    "UPDATED": "Langue(s) mise(s) à jour"
+    "UPDATED": "Langue(s) mise(s) à jour",
+    "MISSING_LEVEL": "Sélectionnez un niveau",
+    "MISSING_LANG": "Sélectionnez une langue"
   },
   "QUALITIES": {
     "MY_QUALITIES": "Mes qualités",
@@ -365,5 +367,8 @@
   },
   "CONVENTION_DATA": {
     "TITLE": "Mes conditions d'employeur"
+  },
+  "TRAINING_HABITATIONS": {
+    "TITLE": "Formations"
   }
 }

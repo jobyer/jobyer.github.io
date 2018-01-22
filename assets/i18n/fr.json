@@ -134,7 +134,9 @@
     "LIST": "Liste des langues",
     "LEVEL": "Niveau",
     "VALIDATE": "Valider",
-    "UPDATED": "Langue(s) mise(s) à jour"
+    "UPDATED": "Langue(s) mise(s) à jour",
+    "MISSING_LEVEL": "Sélectionnez un niveau",
+    "MISSING_LANG": "Sélectionnez une langue"
   },
   "QUALITIES": {
     "MY_QUALITIES": "Mes qualités",
@@ -210,7 +212,8 @@
     "BIC": "BIC",
     "BIC_ERR": "Veuillez saisir un BIC valide",
     "VALIDATE_BTN": "Valider",
-    "FOLLOWING_BTN": "Suivant"
+    "FOLLOWING_BTN": "Suivant",
+    "DATA_MISSING": "Complétez votre RIB pour être rémunéré(e)"
   },
   "MODAL_SERVICE": {
     "CLOSE_TOAST_TEXT": "Vous pourrez reprendre la saisie de vos informations depuis votre compte.",
@@ -362,5 +365,20 @@
     "AD_UPDATED": "Annonce modifiée",
     "AD_REMOVED": "Annonce supprimée",
     "AD_PUBLISHED": "Annonce mise en ligne"
+  },
+  "CONVENTION_DATA": {
+    "TITLE": "Mes conditions d'employeur"
+  },
+  "TRAINING_HABITATIONS": {
+    "TITLE": "Formations"
+  },
+  "OFFER_SLOTS": {
+    "START_GREATER_THAN_TODAY": "L'annonce ne peut pas commencer à une date antérieure à la date d'aujourd'hui",
+    "END_GREATER_OR_EQUAL_THAN_START": "La date de fin devrait être supérieure ou égale à la date de début",
+    "END_GREATER_THAN_START": "L'heure de fin doit être supérieure à l'heure de début",
+    "MAX_DURATION": "Un créneau de travail ne peut dépasser 10 heures consécutives"
+  },
+  "MISSIONS": {
+    "NO_RESULTS": "Aucun résultat trouvé"
   }
 }

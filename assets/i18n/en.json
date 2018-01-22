@@ -133,7 +133,9 @@
     "LIST": "List of languages",
     "LEVEL": "Level",
     "VALIDATE": "Validate",
-    "UPDATED": "Language(s) updated"
+    "UPDATED": "Language(s) updated",
+    "MISSING_LEVEL": "Select a level",
+    "MISSING_LANG": "Select a language"
   },
   "QUALITIES": {
     "MY_QUALITIES": "My qualities",
@@ -207,7 +209,8 @@
     "BIC": "BIC",
     "BIC_ERR": "Please enter a valid BIC",
     "VALIDATE_BTN": "Validate",
-    "FOLLOWING_BTN": "Following"
+    "FOLLOWING_BTN": "Following",
+    "DATA_MISSING": "Complete your RIB to be paid"
   },
   "MODAL_SERVICE": {
     "CLOSE_TOAST_TEXT": "You can resume entering your information from your account",
@@ -357,5 +360,20 @@
     "AD_UPDATED": "Modified ad",
     "AD_REMOVED": "Deleted ad",
     "AD_PUBLISHED": "Ad posted online"
+  },
+  "CONVENTION_DATA": {
+    "TITLE": "My employeur conditions"
+  },
+  "TRAINING_HABITATIONS": {
+    "TITLE": "Trainings"
+  },
+  "OFFER_SLOTS": {
+    "START_GREATER_THAN_TODAY": "Ad can not start earlier than today",
+    "END_GREATER_OR_EQUAL_THAN_START": "The end date should be greater than or equal to the start date",
+    "END_GREATER_THAN_START": "The end time must be greater than the start time",
+    "MAX_DURATION": "The legal duration of the slot must not exceed 10 consecutive hours"
+  },
+  "MISSIONS": {
+    "NO_RESULTS": "no result found"
   }
 }

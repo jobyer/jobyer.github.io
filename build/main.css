@@ -30452,6 +30452,14 @@ ion-navbar.toolbar {
   margin-right: 10px;
 }
 
+.voj-content .voj-form-container .custom-a-left {
+  float: left;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
 .mobile-child-container {
   padding: 5px;
   position: relative;
@@ -30767,6 +30775,13 @@ button[clear].button.purple-btn:hover {
 
 .full-height-content .custom-a-right {
   float: right;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.full-height-content .custom-a-left {
+  float: left;
   text-decoration: underline;
   cursor: pointer;
   font-weight: 500;

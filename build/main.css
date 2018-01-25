@@ -34234,6 +34234,7 @@ page-details {
   overflow-y: auto;
 }
 
+page-details,
 page-details .voj-content,
 page-details .voj-form-container,
 page-details ion-header,

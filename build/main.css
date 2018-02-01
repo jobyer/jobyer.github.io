@@ -32164,6 +32164,10 @@ voj-header-web .voj-segments-container {
   margin-bottom: 0 !important;
 }
 
+voj-header-web .button-clicked {
+  background-color: var(--voj-color-primary);
+}
+
 ion-spinner.web-header-spinner.spinner.spinner-md.spinner-dots.spinner-md-dots * {
   width: 28px;
   height: 28px;

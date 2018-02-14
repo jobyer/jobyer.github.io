@@ -30582,6 +30582,12 @@ ion-content {
   right: 28px;
 }
 
+.fab-notification.account-badges {
+  padding: 8px;
+  border-radius: 50%;
+  right: 5px;
+}
+
 ion-label {
   font-size: 14px !important;
   margin-bottom: 5px !important;
@@ -32162,6 +32168,10 @@ voj-header-web .user-information img {
 
 voj-header-web .voj-segments-container {
   margin-bottom: 0 !important;
+}
+
+voj-header-web .button-clicked {
+  background-color: var(--voj-color-primary);
 }
 
 ion-spinner.web-header-spinner.spinner.spinner-md.spinner-dots.spinner-md-dots * {

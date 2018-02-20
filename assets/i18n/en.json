@@ -135,7 +135,7 @@
     "VALIDATE": "Validate",
     "UPDATED": "Language(s) updated",
     "MISSING_LEVEL": "Select a level",
-    "MISSING_LANG": "Select a language"
+    "MISSING_LANG": "Select a language and a level"
   },
   "QUALITIES": {
     "MY_QUALITIES": "My qualities",

@@ -32979,6 +32979,10 @@ avatar-page #custom-input {
   cursor: pointer;
 }
 
+page-change-password .danger {
+  color: #e93a3a;
+}
+
 enterprise-search-page {
   background-color: #ffffff;
   overflow-y: auto;

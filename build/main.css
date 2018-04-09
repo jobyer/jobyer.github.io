@@ -33348,6 +33348,10 @@ sign-up-page .custom-btn {
   border-color: var(--voj-color-primary);
 }
 
+page-subuser-create .danger {
+  color: #e93a3a;
+}
+
 user-information-page {
   background-color: var(--voj-color-primary);
 }
@@ -34260,6 +34264,14 @@ page-details ion-content {
   page-details .voj-content {
     height: calc(100% - 220px);
   }
+}
+
+convention-data-page .convention-link {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #000000;
+  text-decoration: underline;
 }
 
 page-home voj-map #map {

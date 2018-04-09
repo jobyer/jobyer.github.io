@@ -18,7 +18,7 @@
   "VALIDATION": {
     "PHONE_VALIDATION_MSG": "Veuillez saisir un numéro de téléphone à 10 chiffres commençant par 06 ou 07",
     "EMAIL_VALIDATION_MSG": "Saisissez une adresse mail valide",
-    "PASSWORD_VALIDATION_MSG": "Veuillez saisir au minimum 6 caractères",
+    "PASSWORD_VALIDATION_MSG": "Veuillez saisir au minimum 8 caractères, dont au moins une lettre en majuscule, un chiffre et un symbôle",
     "PASSWORD_CONFIRMATION_MSG": "Les mots de passe doivent être identiques"
   },
 

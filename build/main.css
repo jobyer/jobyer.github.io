@@ -34713,6 +34713,36 @@ ion-spinner * {
   stroke: #444 !important;
 }
 
+page-interviews-calendar,
+page-interviews-calendar voj-calendar {
+  background-color: #ffffff !important;
+}
+
+page-interviews-calendar .calender-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: var(--voj-color-primary) !important;
+  overflow: scroll;
+}
+
+page-interviews-calendar .calendar-wrapper {
+  height: 92%;
+}
+
+page-interviews-calendar .calendar-wrapper.pad {
+  background-color: var(--voj-color-primary) !important;
+  padding: 16px;
+  padding-top: 0;
+}
+
+page-interviews-calendar fullcalendar-wrapper {
+  overflow: scroll;
+}
+
 page-about ion-header {
   background-color: var(--voj-color-primary) !important;
 }

@@ -30959,6 +30959,10 @@ voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view tabl
   height: 100% !important;
 }
 
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container {
+  background-color: white;
+}
+
 voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid {
   display: -webkit-box;
   display: -webkit-flex;
@@ -32651,6 +32655,10 @@ voj-page-outlet {
   background-color: var(--voj-color-primary);
 }
 
+voj-page-outlet div.voj-full-height-content {
+  overflow: auto !important;
+}
+
 voj-rating ul {
   padding: 0px;
   -webkit-flex-wrap: nowrap;
@@ -33377,6 +33385,10 @@ page-notification {
   background-color: var(--voj-color-primary);
 }
 
+page-notification ion-card-header {
+  color: #ffffff !important;
+}
+
 page-open-application .container {
   padding: 15px;
   background-color: var(--voj-color-primary);
@@ -33729,7 +33741,7 @@ page-availabilities-calendar .calender-container {
 }
 
 page-availabilities-calendar .calendar-wrapper {
-  height: 92%;
+  height: 94%;
 }
 
 page-availabilities-calendar .calendar-wrapper.pad {
@@ -34024,7 +34036,7 @@ page-my-offers-calendar .calender-container {
 }
 
 page-my-offers-calendar .calendar-wrapper {
-  height: 92%;
+  height: 94%;
 }
 
 page-my-offers-calendar .calendar-wrapper.pad {
@@ -34268,6 +34280,14 @@ page-offer-set-slots .calendar-wrapper {
 
 page-offer-set-slots .calendar-wrapper.mobile {
   height: 80%;
+}
+
+page-offer-set-slots .validate-button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 page-offer-slot-parameters {
@@ -34973,7 +34993,7 @@ page-interviews-calendar .calender-container {
 }
 
 page-interviews-calendar .calendar-wrapper {
-  height: 92%;
+  height: 94%;
 }
 
 page-interviews-calendar .calendar-wrapper.pad {
@@ -35043,7 +35063,7 @@ page-missions-calendar .calender-container {
 }
 
 page-missions-calendar .calendar-wrapper {
-  height: 92%;
+  height: 94%;
 }
 
 page-missions-calendar .calendar-wrapper.pad {
